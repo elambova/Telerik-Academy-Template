@@ -1,0 +1,435 @@
+html, body, header, section, article, aside,
+div, img, ul, li, a, h2, h3, p, span {
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: #252017 url("../images/bghome.jpg") no-repeat top left;
+    font: 10px arial, sans-serif;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul {
+    list-style-type:  none;
+}
+img{
+    display: inline-block;
+}
+h2{
+    color: #d0cecd;
+    font-size: 17px;
+}
+.article p.posted-by, header p.posted-by {
+    color: #7f6379;
+    margin-top: 5px;
+    font-size: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #705963;
+    border-top: 1px solid #705963;
+}
+
+#header {
+    background-color: #000;
+    opacity: 100%;
+    width: 100%;
+    border-bottom: 1px solid #705963;
+}
+#toggle-button {
+    display: none;
+}
+#menu{
+    margin-left: 12%;
+    height: 55px;
+}
+.menu{
+    display: inline-block;
+    padding: 2.5% 1% 2.5% 0;
+}
+.menu > a{ 
+    padding: 60% 15%;
+    margin: 1%;
+} 
+
+#logo {
+    margin-left: 10%;
+}
+#wrapper-section{
+    width: 80%;
+    background-color: rgba(0,0,0,0.3);
+    border:  1px solid rgba(0,0,0,0.3);
+    border-bottom: none;
+    border-radius: 8px;
+    margin: auto;
+}
+#slider {
+    width: 95%;
+    margin: 10px auto;
+    padding-bottom: 10px;
+}
+#news-2, #news-3, #news-4 {
+    display: none;
+}
+#prev, #next {
+    border: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    text-align: center;
+    width: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    top: 150px;
+}
+#prev{
+    left: 10.5%;
+}
+#next {
+    right: 10.5%;
+}
+
+#wrapper-content {
+    margin: 25px auto;
+    width: 80%;
+    padding-bottom: 20px;
+    border: 1px solid rgba(75, 39, 62, 1);
+    background-color: #201c14;
+}
+#wrapper-content h2 {
+    text-transform: uppercase;
+    color: #70644d;
+    margin-bottom: 5px;
+}
+#wrapper-content h3{
+    color: #443235;
+}
+#first-section, #second-section, 
+#third-section {
+    width: 30%;
+    height: 300px;
+    margin: 20px 0 0 20px;
+    float: left;
+}
+#diferent-section {
+    width: 60%;
+    margin: 20px 0 0 20px;
+    float: left;
+    padding-bottom: 20px;
+}
+#diferent-section:after {
+    clear: both;
+}
+.article img {
+    float: left;
+    margin: 5px;
+}
+p.info{
+    display: block;
+    margin: 10px 1px;
+    width: 99%
+}
+h3.title{
+    width: 70%;
+    display: inline-block;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.title span {
+    font-style: italic;
+    color: #816772;
+}
+
+#second-section .article header {
+    border-bottom: 1px solid #2c1e1e;
+}
+#second-section .article p {
+    margin: 10px 5px;
+}
+
+#diferent-section p.info {
+    display: inline-block;
+    width: 50%;
+    font-size: 11px;
+    margin-left: 5px;
+}
+#diferent-section header h3 {
+    font-weight: bold;
+    color: #443235;
+    font-size: 15px;
+}
+
+#aside {
+    display: inline-block;
+    width: 35%;
+    margin-top: 10px;
+}
+#aside p.list-title {
+    font-size: 11px;
+    width: 105%;
+    padding-left: 15px;
+    border: 1px solid rgba(75, 39, 62, 1);
+    border-right: none;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    border-radius: 5px;
+    background: #521c41 url('../images/post-logo-bg.png') repeat top left;
+}
+#aside ul li {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+#aside ul li a {
+    margin-left: 15px;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    #logo {
+        margin-left: 15%;
+    }
+    #slider {
+        width: 90%;
+    }
+    #prev {
+        left: 10%;
+        top: 170px;
+    }
+    #next {
+        right: 10%;
+        top: 170px;
+    } 
+    .article p{
+        margin: 10px;
+    }
+    #first-section,#second-section, #third-section {
+        height: 380px;
+    }
+    #diferent-section {
+        margin-right: 10px;
+        height: 380px;
+    }
+    .article p.info {
+        width: 99%;
+        margin-bottom: 35px;
+    }
+    #second-section h3 {
+        margin: 6px 5px;
+    }
+    #diferent-section img {
+        width: 30%;
+        float: left;
+        margin: 5px;
+    }
+    #diferent-section p.info {
+        width: 99%;
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 890px) {
+    #wrapper-content, #wrapper-section {
+        width: 95%;
+    }
+    #logo, #menu{ 
+        text-align: center;
+        margin-left: 0;
+    }
+    .menu {
+        width: 10%;
+    }
+    .menu > a {
+        padding:50% 40%;
+    }
+    #prev {
+        left: 0;
+        top: 140px;
+        padding: 5%;
+    }
+    #next {
+        right: 0;
+        top: 140px;
+        padding: 5%;
+    } 
+    #first-section, #third-section, #second-section, #diferent-section {
+        width: 40%;
+        margin: 5% 2.5% 5% 5%;
+        height: 300px;
+    }
+    #diferent-section:after {
+        display: block;
+    }
+    .article header {
+        margin-bottom: 12px;
+        margin-top: 12px;
+    }
+    .article p.posted-by {
+        font-size: 10px;
+    }
+    .article p.info, .article p, #slider article p,
+    #diferent-section p.info, #first-list-aside a,
+    #second-list-aside a {
+        font-size: 11px;
+    }
+    #first-section img, #third-section img {
+        width: 20%;
+    }
+    #diferent-section img {
+        width: 50%;
+    }
+    #aside {
+        width: 99%;
+    }
+    #first-list-aside, #second-list-aside {
+        float: left;
+        width: 40%;
+        margin: 5%;
+    }
+    #first-list-aside p.list-title, #second-list-aside p.list-title {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #first-section, #third-section, #second-section, #diferent-section{
+        height: 340px;
+    }
+    #prev, #next {
+        top: 170px;
+    }
+    p.posted-by {
+        font-size: 10px;
+    }
+    .article p.info, .article p, #slider article p,
+    #diferent-section p.info, #first-list-aside a,
+    #second-list-aside a {
+        margin-bottom: 25px;   
+        font-size: 12px;
+    }
+    .article p.info{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    #diferent-section img {
+        width: 60%;
+        clear: both;
+    }
+    #first-list-aside, #second-list-aside {
+        margin: 15% 5%;
+    }
+}
+@media screen and (max-width: 660px) {
+    #first-section, #third-section, #second-section, #diferent-section{
+        height: 380px;
+    }
+    #prev, #next {
+        top:180px;
+    }
+    #first-section img, #third-section img {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .menu { 
+        padding: 4.5% 2.5%;  
+    }
+    .menu > a{ 
+        padding: 85% 15%;
+        margin: 10% 5%;
+    } 
+    #slider {
+        width: 90%;
+    }
+    #prev, #next {
+        top: 180px;
+    }
+    #first-section img, #third-section img {
+        width: 20%;
+        margin-top: 0;
+    }
+    .article header {
+        margin-bottom: 0;
+    }
+    #diferent-section img {
+        width: 50%;
+    }
+    .article p.info {
+        margin-top: 20px;
+    }
+    #first-section h3:last-of-type, #third-section h3:last-of-type{
+        margin-top: 40px;
+    }
+    #first-section, #second-section,
+    #third-section, #diferent-section{
+        display: block;
+        width: 90%;
+        height: 100%;
+    }
+    #first-list-aside, #second-list-aside {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #slider {
+        width: 85%;
+    }
+    #prev, #next {
+        top:210px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #toggle-button { 
+        display: block;
+        width: 60%;
+        margin: 1px auto;
+        background: #252017 url("../images/bghome.jpg") no-repeat fixed center;
+        border: 2px solid #705963;
+        border-radius: 5px;
+        color: #fff;
+    }
+    #menu{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 210px;
+        display: none;
+        margin-left: 0;
+    }
+    .menu {
+        background-color: #000;
+        border-bottom: 1px solid #705963;
+        display: block;
+        width: 50%;
+        text-align: center;
+        margin: 1px auto;
+        padding: 10px;
+    }
+    .menu > a{ 
+        padding: 5% 15%;
+        margin: 1%;
+    }
+    #prev, #next {
+        top:200px;
+        padding: 10% 5%;
+    }
+
+    #first-section, #second-section,
+    #third-section, #diferent-section{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    #diferent-section {
+        margin-top: 80px;
+    }
+}
